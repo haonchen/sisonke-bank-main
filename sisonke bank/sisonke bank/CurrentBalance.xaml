@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sisonke_Banking_App.CurrentBalance">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="accountShowID" FontSize="15" FontAttributes="Bold" Padding="30,0,30,0"/>
+            <Label x:Name="accountShowBalance" FontSize="Medium" FontAttributes="Bold"  Padding="30,0,30,0"/>
+
+            <Button
+                Text="Check Balance"
+                Clicked="Button_Clicked" />
+            <CollectionView x:Name="checkBalance">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Id}" FontSize="15" FontAttributes="Bold"/>
+                            <Label Text="{Binding Balance}" FontSize="Medium" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

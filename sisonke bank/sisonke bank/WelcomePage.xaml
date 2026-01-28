@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sisonke_Banking_App.WelcomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#000000"  Padding="24" CornerRadius="0">
+                <Label Text="Welcome to Sisonke Bank" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Button
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="GhostWhite"
+                BackgroundColor="Black"
+                BorderColor="Black"
+                BorderWidth="0.5"
+                CornerRadius="20"
+                Clicked="Button_Clicked"
+                ></Button>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="New to the Bank? " TextColor="Black" FontAttributes="Italic" />
+                        <Span Text="Create an account now." TextColor="Black" FontAttributes="Italic" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+            <Button
+                VerticalOptions="Center"
+                Text="Register"
+                x:Name="Register"
+                TextColor="GhostWhite"
+                BackgroundColor="Black"
+                BorderColor="Black"
+                BorderWidth="0.5"
+                CornerRadius="20"
+                Clicked="Register_Clicked"
+                ></Button>
+
+            <Label Text="Welcome to Sisonke Bank!"
+                   FontAttributes="Italic"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

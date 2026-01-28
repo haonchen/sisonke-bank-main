@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sisonke_Banking_App.Transactions">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#000000"  Padding="24" CornerRadius="0">
+                <Label Text="Transactions" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            
+            <Button 
+                x:Name="Deposit"
+                HorizontalOptions="FillAndExpand"
+                Text="Deposit"
+                TextColor="Black"
+                BackgroundColor="#2196F3"
+                BorderColor="Transparent"
+                FontAttributes="Bold"
+                BorderWidth="2"
+                CornerRadius="20"
+                Clicked="Deposit_Clicked"
+                ></Button>
+
+            <Button
+                x:Name="WithDrawal"
+                HorizontalOptions="FillAndExpand"
+                Text="WithDrawal"
+                TextColor="Black"
+                BackgroundColor="#2196F3"
+                BorderColor="Transparent"
+                BorderWidth="2"
+                CornerRadius="20"
+                FontAttributes="Bold"
+                Clicked="WithDrawal_Clicked"
+                ></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

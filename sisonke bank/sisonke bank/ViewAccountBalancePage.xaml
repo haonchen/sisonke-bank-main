@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sisonke_Banking_App.ViewAccountBalancePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#020202"  Padding="24" CornerRadius="0">
+                <Label Text="Sisonke Bank" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Button
+                x:Name="CurrentBalance"
+                HorizontalOptions="FillAndExpand"
+                Text="Current Balance"
+                TextColor="Black"
+                BackgroundColor="#2196F3"
+                BorderColor="Transparent"
+                BorderWidth="2"
+                CornerRadius="20"
+                FontAttributes="Bold"
+                Clicked="CurrentBalance_Clicked"
+                ></Button>
+
+            <Button
+                x:Name="SavingsAccountBalance"
+                HorizontalOptions="FillAndExpand"
+                Text="Savings Account Balance"
+                TextColor="Black"
+                BackgroundColor="#2196F3"
+                BorderColor="Transparent"
+                BorderWidth="2"
+                CornerRadius="20"
+                FontAttributes="Bold"
+                Clicked="SavingsAccountBalance_Clicked"
+                ></Button>
+
+
+
+            <Label Text="Welcome to View Account Balance!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

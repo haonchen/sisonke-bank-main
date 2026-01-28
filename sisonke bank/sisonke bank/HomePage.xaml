@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sisonke_Banking_App.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#893EAF"  Padding="24" CornerRadius="0">
+                <Label Text="Sisonke Bank" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Button
+                x:Name="CreateAccount"
+                HorizontalOptions="FillAndExpand"
+                Text="Create Account"
+                TextColor="Black"
+                BackgroundColor="#2196F3"
+                BorderColor="Transparent"
+                FontAttributes="Bold"
+                Clicked="CreateAccount_Clicked"
+                ></Button>
+
+            <Button
+                x:Name="ViewAccountBalance"
+                 HorizontalOptions="FillAndExpand"
+                Text="View Account Balance"
+                TextColor="Black"
+                BackgroundColor="#2196F3"
+                BorderColor="Transparent"
+                FontAttributes="Bold"
+                Clicked="ViewAccountBalance_Clicked"
+                ></Button>
+
+            <Button
+                x:Name="TransferBetweenAccounts"
+                HorizontalOptions="FillAndExpand"
+                Text="Transfer Between Accounts"
+                TextColor="Black"
+                BackgroundColor="#2196F3"
+                BorderColor="Transparent"
+                FontAttributes="Bold"
+                Clicked="TransferBetweenAccounts_Clicked"
+                ></Button>
+
+            <Button
+                x:Name="BtnTransactions"
+                HorizontalOptions="FillAndExpand"
+                Text="Transactions"
+                TextColor="Black"
+                BackgroundColor="#2196F3"
+                BorderColor="Transparent"
+                FontAttributes="Bold"
+                Clicked="BtnTransactions_Clicked"
+                ></Button>
+            
+            <Button
+                x:Name="LogOut"
+                Text="Log Out"
+                TextColor="Black"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#2196F3"
+                BorderColor="Black"
+                FontAttributes="Bold"
+                Clicked="LogOut_Clicked"
+                ></Button>
+
+
+
+            <Label Text="Welcome to Sisonke Bank!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

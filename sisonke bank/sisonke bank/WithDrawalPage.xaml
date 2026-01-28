@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sisonke_Banking_App.WithDrawalPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#000000"  Padding="24" CornerRadius="0">
+                <Label Text="Sisonke Bank" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Entry Placeholder="Account Number"
+                   MaxLength="50"
+                   Keyboard="Numeric"
+                   BackgroundColor="GhostWhite"
+                   TextColor="Black"
+                   x:Name="txtAccountNumber" />
+
+            <Entry Placeholder="Amount"
+                   Keyboard="Numeric"
+                   TextColor="Black"
+                   BackgroundColor="GhostWhite"
+                   x:Name="txtAmount" />
+
+            <Button Text="WithDraw"
+                    x:Name="WithDraw"
+                    TextColor="GhostWhite"
+                    BackgroundColor="Black"
+                    BorderColor="Black"
+                    Clicked="WithDraw_Clicked" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

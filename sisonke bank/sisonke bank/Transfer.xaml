@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sisonke_Banking_App.Transfer">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#000000"  Padding="24" CornerRadius="0">
+                <Label Text="Sisonke Bank" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Entry Placeholder="From CurrentAcc"
+                   Keyboard="Numeric"
+                   TextColor="Black"
+                   BackgroundColor="GhostWhite"
+                   x:Name="txtFromAccountNumber" />
+
+            <Entry Placeholder="To SavingsAcc"
+                   Keyboard="Numeric"
+                   TextColor="Black"
+                   BackgroundColor="GhostWhite"
+                   x:Name="txtToAccountNumber" />
+
+
+            <Entry Placeholder="Transfer Amount"
+                   Keyboard="Numeric"
+                   TextColor="Black"
+                   BackgroundColor="GhostWhite"
+                   x:Name="txtTransferAmount" />
+
+            <Button Text="Send"
+                    x:Name="Send"
+                    TextColor="GhostWhite"
+                    BackgroundColor="Black"
+                    BorderColor="Black"
+                    Clicked="Send_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

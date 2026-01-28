@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sisonke_Banking_App.RegistrationPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#000000"  Padding="24" CornerRadius="0">
+                <Label Text="Register" FontAttributes="Italic" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+
+
+            <Entry x:Name="txtFirstName" Placeholder="First Name" ReturnType="Next" TextColor="Black" PlaceholderColor="Black"></Entry>
+            <Entry x:Name="txtLastName" Placeholder="Last Name" ReturnType="Next" TextColor="Black" PlaceholderColor="Black"></Entry>
+            <Entry x:Name="txtGender" Placeholder="Gender" ReturnType="Next" Keyboard="Text" TextColor="Black" PlaceholderColor="Black"></Entry>
+            <Entry x:Name="txtPhoneNumber" ReturnType="Next" Placeholder="Phone Number" MaxLength="10" Keyboard="Telephone" TextColor="Black" PlaceholderColor="Black"></Entry>
+            <Entry x:Name="txtEmailAddress" ReturnType="Next" Placeholder="Email Address" Keyboard="Email" TextColor="Black" PlaceholderColor="Black"></Entry>
+            <Label  x:Name="labelError" TextColor="Red" />
+            <Entry x:Name="txtPassword" Placeholder="Password" Keyboard="Numeric" IsPassword="True" PlaceholderColor="Black"></Entry>
+            <Button
+                VerticalOptions="Center"
+                Text="Register"
+                TextColor="GhostWhite"
+                BackgroundColor="Black"
+                BorderColor="Black"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="Button_Clicked"
+                ></Button>
+
+
+            <Label Text="Welcome to Registration Page!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
