@@ -1,1 +1,2 @@
 # sisonke bank
+Comprehensive User Guide & Technical Documentation This repository contains complete documentation for the Sisonke Bank Mobile Banking Application - a user-friendly Android app designed for secure financial management and banking operations.
